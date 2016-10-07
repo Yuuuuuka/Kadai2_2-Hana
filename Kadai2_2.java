@@ -4,19 +4,19 @@ class Kadai2_2{
 		BufferedReader br =
 			new BufferedReader(new InputStreamReader(System.in));
 			
-		System.out.println("ŠJnˆÊ’u‚ÌxÀ•W");
+		System.out.println("é–‹å§‹ä½ç½®ã®xåº§æ¨™");
 		String str1=br.readLine();
 		int x=Integer.parseInt(str1);
 		
-		System.out.println("ŠJnˆÊ’u‚ÌyÀ•W");
+		System.out.println("é–‹å§‹ä½ç½®ã®yåº§æ¨™");
 		String str2=br.readLine();
 		int y=Integer.parseInt(str2);
 		
-		System.out.println("‰Æ‚Ì‚‚³");
+		System.out.println("å®¶ã®é«˜ã•");
 		String str3=br.readLine();
 		int d=Integer.parseInt(str3);
 		
-		System.out.println("‰®ª‚ÌŠp“x");
+		System.out.println("å±‹æ ¹ã®è§’åº¦");
 		String str4=br.readLine();
 		int a=Integer.parseInt(str4);
 		
@@ -26,28 +26,28 @@ class Kadai2_2{
 		Turtle m=new Turtle(x,y,0);
 		
 		java.awt.Color c
-			=new java.awt.Color(0,0,255);//ÂFƒIƒuƒWƒFƒNƒg‚ğ¶¬
-		m.setColor(c);//m‚ÌF‚ğÂF‚Éw’è
+			=new java.awt.Color(0,0,255);//é’è‰²ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
+		m.setColor(c);//mã®è‰²ã‚’é’è‰²ã«æŒ‡å®š
 		
 		f.add(m);
 		
-		m.fd(d);//•Ó1
-		m.lt(90);//¶‚É90‹‰ñ“]
+		m.fd(d);//è¾º1
+		m.lt(90);//å·¦ã«90Â°å›è»¢
 		
-		m.fd(d/2);//•Ó2
+		m.fd(d/2);//è¾º2
 		
-		m.rt(a);//‰E‚Éa‹‰ñ“](•Ó2‚Æ3‚ÌŠÔ)
+		m.rt(180 - a);//å³ã«aÂ°å›è»¢(è¾º2ã¨3ã®é–“)
 		
-		m.fd(d);//•Ó3
+		m.fd(d);//è¾º3
 		
-		m.rt(180-a);//•Ó3‚Æ4‚ÌŠÔ‚ÌŠp
-		m.fd(d*2);//•Ó4
+		m.rt(a);//è¾º3ã¨4ã®é–“ã®è§’
+		m.fd(d*2);//è¾º4
 		
-		m.rt(180-a);//•Ó4‚Æ5‚ÌŠÔ‚ÌŠp
-		m.fd(d);//•Ó5
-		m.rt(a);//•Ó5‚Æ6‚ÌŠÔ‚ÌŠp
-		m.fd(d/2);//•Ó6
-		m.lt(90);//¶‚É90‹‰ñ“]
-		m.fd(d);//•Ó7
+		m.rt(a);//è¾º4ã¨5ã®é–“ã®è§’
+		m.fd(d);//è¾º5
+		m.rt(180 - a);//è¾º5ã¨6ã®é–“ã®è§’
+		m.fd(d/2);//è¾º6
+		m.lt(90);//å·¦ã«90Â°å›è»¢
+		m.fd(d);//è¾º7
 	}
 }
